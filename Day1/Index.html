@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking Website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <style>
+        table {
+            border-spacing: 4px;
+        }
+
+        table thead tr th,
+        table tbody tr td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- <ul>
+                <li>Home</li>
+                <li>Flight Section</li>
+                <li>Flight Timings</li>
+                <li>About Us</li>
+                <li>FAQs</li>
+            </ul> -->
+            <a href="#Home">Home</a>
+            <a href="#FlightSection">Flight Section</a>
+            <a href="#FlightTimings">Flight Timings</a>
+            <a href="#AboutUs">About Us</a>
+            <a href="#FAQ">Frequently Asked Questions</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="Home">
+            <div class="top">
+                <!-- <img src="Images/aeroplane2.jpg" alt="Plane"> -->
+                <h1>SkyRoute : Your Gateway to Seamless Skies</h1>
+                <p>Introducing SkyRoute, your ultimate travel companion and the go-to destination for all your flight
+                    booking needs. At SkyRoute, we believe that the journey of a thousand miles begins with a simple,
+                    seamless booking process.
+                    Our user-friendly website is meticulously designed to provide you with a hassle-free experience from
+                    the moment you start planning your trip to the moment you touch down at your destination. With an
+                    extensive array of airlines, routes, and fares, SkyRoute empowers you to curate your travel
+                    itinerary
+                    to perfection. </p>
+                <h4>You can do :
+                    <ul>
+                        <li>Track Flights</li>
+                        <li>Book Flights</li>
+                        <li>Check Ticket Status</li>
+                        <li>Postpone your flight</li>
+                    </ul>
+                </h4>
+                <h2>Our Purpose</h2>
+
+                <p>Our purpose is to empower you with the tools and information you need to make informed decisions
+                    about your travel plans. Whether you're a seasoned globetrotter or a first-time explorer, our
+                    purpose is to be your trusted companion on every step of your journey. From finding the best deals
+                    to providing exceptional customer support, our purpose is to ensure that your travel experience is
+                    marked by convenience, reliability, and the joy of discovery. With SkyRoute, your purpose becomes
+                    ours, as we work tirelessly to make your travel dreams take flight.</p>
+            </div>
+            <div class="customer-review">
+                <h2>Listen from our happy customers</h2>
+                <div class="review-container">
+                    <div class="review">
+                        <div class="profile">
+                            <img src="Images/user-1-removebg-preview1.png" alt="">
+                        </div>
+                        <div class="rating">
+                            <span>&#10025; &#10025; &#10025; &#10025; &#10025;</span>
+                            <span><b>John Doe</b></span>
+                            <br>
+                            <small>20 days ago</small>
+                            <br>
+                            <p>
+                                "SkyRoute impressed me with its seamless UI, offering a user-friendly browsing experience. The value for money pricing added to the appeal, letting me book a great deal effortlessly. The 24/7 support was exceptional; my late-night queries were promptly answered. SkyRoute has become my go-to for stress-free flight bookings.".</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="submit-your-review">
+                    <h2>Are you an existing customer?</h2>
+                    <p>Please use this form to rate your overall experience.</p>
+                    <small>&#128274; Your information is 100% Safe</small><br><br>
+                    <form action="#" method="GET">
+                        <label for="Name">Name *</label>
+                        <input type="text" name="Name" id="Name" placeholder="Enter Full Name">
+                        <br><br>
+                        <label for="ratings">Ratings</label>
+                        1 &#10025;<input type="radio" name="ratings" id="ratings" name="ratings">
+                        2 &#10025;<input type="radio" name="ratings" id="ratings" name="ratings">
+                        3 &#10025; <input type="radio" name="ratings" id="ratings" name="ratings">
+                        4 &#10025;<input type="radio" name="ratings" id="ratings" name="ratings">
+                        5 &#10025; <input type="radio" name="ratings" id="ratings" name="ratings">
+                        <br><br>
+                        <label for="number">Flight Number</label>
+                        <input type="number" name="number" id="number" placeholder="Flight Number">
+                        <br><br>
+                        <label for="date">Flight Date</label>
+                        <input type="date" name="date" id="date" placeholder="Flight Date">
+                        <br><br>
+                        <!-- <label for="text">Your Review</label>
+                        <input type="text" name="text" id="text"> -->
+                        <label for="description">Write Review :</label> <br><br>
+                        <textarea id="description" name="description" rows="4" cols="50"></textarea>
+                        <br><br>
+                        <label for="Submit">
+                            <input type="submit" name="Submit" id="Submit" value="Submit Review">
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <hr>
+    </main>
+    <!-- END OF HERO SECTION -->
+
+    <section id="#FlightSection">
+        <h2>Flight Section</h2>
+        <div class="flight-booking">
+            <img src="Images/book-ticket-online.png" width="650px" alt=""> <br><br>
+            <h3>Book your flight :</h3>
+            <label for="bookflight">Search flights </label>
+            <input type="bookflight" name="bookflight" id="bookflight" placeholder="Enter Flight Name or Number">
+            <br>
+            <br>
+            <label for="departure">Departure From : </label>
+            <select name="departure" id="departure">
+                <option value="">Select</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Banglore">Banglore</option>
+            </select>
+            <label for="Arrival">Arrival : </label>
+            <select name="Arrival" id="Arrival">
+                <option value="">Select</option>
+                <option value="Delhi">Delhi</option>
+                <option value="DXB">DXB</option>
+                <option value="Manama City">Manama City</option>
+            </select>
+            <br><br>
+            <label for="departure">Departure Date</label>
+            <input type="datetime-local" name="departure" class="departure" id="departure">
+            <br><br>
+            <label for="arrival">Arrival Date</label>
+            <input type="datetime-local" name="arrival" class="arrival" id="arrival">
+            <br><br>
+            <label for="passenger">No of Passenger</label>
+            <input type="number" name="passenger" id="passenger" placeholder="select no of passenger">
+            <br><br>
+            <label for="price-slider">Price Range</label>
+            <input type="range" id="price-slider" name="price-slider" min="$2000" max="$5000">
+            <br><br>
+            <label for="class">Select Class : </label>
+            <select name="class" id="class">
+                <option value="">Select</option>
+                <option value="Delhi">Business</option>
+                <option value="DXB">Deluxe</option>
+                <option value="Manama City">Economy</option>
+            </select><br><br>
+            <button type="submit">Book Flight</button>
+        </div>
+
+        <hr>
+    </section>
+
+    <section class="flightTiming">
+        <h2>Flight Schedule</h2>
+        <table style="border-spacing: 4px; border: 1px solid black;">
+            <thead style="border: 1px solid black">
+                <tr style="border: 1px solid black">
+                    <th style="border: 1px solid black">Flight Name</th>
+                    <th style="border: 1px solid black">Flight Number</th>
+                    <th style="border: 1px solid black"> Departure Time</th>
+                    <th style="border: 1px solid black">Arrival Time</th>
+                    <th style="border: 1px solid black">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Saudi Airlines</td>
+                    <td>SV754</td>
+                    <td>Departed 5hr ago</td>
+                    <td>Arriving in 1 hr 12 mins</td>
+                    <td>On Time</td>
+                </tr>
+                <tr>
+                    <td>Qatar Airways</td>
+                    <td>QTR707</td>
+                    <td>Departed 4hr 30mins ago</td>
+                    <td>Arrived 2 mins ago</td>
+                    <td>On Time</td>
+                </tr>
+                <tr>
+                    <td>Indigo Airlines</td>
+                    <td>ING200</td>
+                    <td>Departed 2hr 30mins ago</td>
+                    <td>Arriving in 3hr 40mins </td>
+                    <td>Delayed</td>
+                </tr>
+                <tr>
+                    <td>Emirates</td>
+                    <td>EK307</td>
+                    <td>Departed 1hr 30mins ago</td>
+                    <td>Arriving in 2mins</td>
+                    <td>On Time</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+    </section>
+
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>Introducing our cutting-edge Flight Booking App, designed to redefine your travel experience. Discover a
+            world of convenience, savings, and seamless journeys right at your fingertips. With our app, you gain access
+            to a host of key features that elevate your travel planning:</p>
+        <ul>
+            <li><b>Exclusive Discoutnts :</b></li>
+            <p> Unlock a treasure trove of exclusive deals and discounts that make your dream destinations more
+                affordable than <br> Our app ensures that you get the best value for your money, with special offers
+                tailored to your preferences.</p>
+            <li><b>Real-Time Tracking :</b></li>
+            <p>Stay informed and empowered throughout your journey with real-time flight tracking. From departure to
+                arrival, our app provides live updates to keep you in the loop and minimize uncertainty.</p>
+            <li><b>24/7 Support</b></li>
+            <p>We've got your back around the clock. Our dedicated support team is available 24/7 to assist you with any
+                queries, concerns, or last-minute changes, ensuring a stress-free travel experience.</p>
+            <li><b>Seamless Booking Process:</b></li>
+            <p>Say goodbye to complicated booking processes. Our app offers an intuitive and user-friendly interface
+                that simplifies the entire booking experience, allowing you to secure your flights quickly and
+                effortlessly.</p>
+        </ul>
+        <h2>Contact Us</h2>
+        <p>Name : Abdul Aziz Masood</p>
+        <span>Call &#x2706; Now : </span>
+        <a href="tel:9010080800">+91-9010080800</a> <br><br>
+        <span>Write a &#x2709; : </span>
+        <a href="matilto:bookyourdreamflight@gmail.com">book@SkyRoute.com</a>
+        <hr>
+    </section>
+
+    <section class="popular-destination">
+        <h2>Our Popular Destinations</h2>
+        <h3>
+            <ul>1. DUBAI
+                <li style="list-style-type: none;"> <br>
+                    <img src="Images/Dubai-image.webp" width="250px" alt="">
+                </li>
+                <small><a href="#">Enquire now</a></small>
+            </ul>
+            <ul>2. JEDDAH
+                <li style="list-style-type: none;"> <br>
+                    <img src="Images/day-at-Jeddah.jpeg" width="250px" alt="">
+                </li>
+                <small><a href="#">Enquire now</a></small>
+            </ul>
+            <ul>3. LONDON
+                <li style="list-style-type: none;"> <br>
+                    <img src="Images/London-City-Travel-Guide-Vogue-India.webp" width="250px" alt="">
+                </li>
+                <small><a href="#">Enquire now</a></small>
+            </ul>
+            <ul>4. Doha
+                <li style="list-style-type: none;"> <br>
+                    <img src="Images/doha.jpg" width="250px" alt="">
+                </li>
+                <small><a href="#">Enquire now</a></small>
+            </ul>
+        </h3>
+
+        <hr>
+
+
+    </section>
+
+    <section class="faqs">
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
+        <ul>
+            <h3>Q: How do I book a flight using the app?</h3>
+            <li style="list-style-type: none;">
+                <p><b>A:</b> Booking a flight is simple. Just download the app, search for your preferred destination
+                    and dates, choose the flight that suits you best, and follow the prompts to complete the booking.
+                </p>
+            </li>
+            <h3>Q: Can I get a refund if my plans change?</h3>
+            <li style="list-style-type: none;">
+                <p><b>A:</b> Yes, we offer hassle-free cancellation and refund options. Depending on the fare type and
+                    timing, you can modify or cancel your booking through the app.</p>
+            </li>
+            <h3>Q: How can I track my flight's status in real time?</h3>
+            <li style="list-style-type: none;">
+                <p><b>A:</b> With our app, you can easily track your flight's real-time status. Just enter your flight
+                    details, and the app will provide live updates on departure, arrival, and any potential delays.</p>
+            </li>
+            <h3>Q: How does the app provide personalized travel recommendations?</h3>
+            <li style="list-style-type: none;">
+                <p><b>A:</b>The app remembers your preferences and choices, using this information to offer personalized
+                    travel recommendations that match your interests and needs.</p>
+            </li>
+        </ul>
+        <hr>
+    </section>
+
+    <footer>
+        <p> &copy; 2023 <b>Sky Route</b> All rights reserved. </p>
+    </footer>
+    
+</body>
+
+</html>
